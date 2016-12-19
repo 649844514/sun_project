@@ -260,10 +260,10 @@ article .last .con {
 }
 article .box {
   background: #efeff4;
-  padding: 3%;
+  padding: 0 3% 45px 3%;
 }
 article .box .list {
-  height: 10px;
+  height: 5px;
   width: 100%;
   background: url("../../img/index/content_img_home03@2x.png") no-repeat center;
   background-size: 100% 185px;

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,
+			maximum-scale=1,minimum-scale=1,user-scalable=no">
+	<title>项目名 - 公司名</title>
+	<link rel="stylesheet" href="//cdn.bootcss.com/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="../../public/css/login/register.css">
+</head>
+<body>
+	<header>
+		<i class="icon-back" onclick="history.back()"></i>
+		<span class="header_title">注册</span>
+	</header>
+	<article class="form-list">
+		<section class="form-cell">
+			<span class="form-cell-name">帐号：</span>
+			<input type="text" id="names" class="form-cell-input" placeholder="请输入您的手机号">
+		</section>
+		<section class="form-cell">
+			<span class="form-cell-name form-cell-mark">验证码：</span>
+			<input type="text" id="mark" class="form-cell-input" placeholder="请输入验证码">
+			<button class="btn_mark">获取验证码</button>
+		</section>
+		<section class="form-cell">
+			<span class="form-cell-name form-cell-password">密码：</span>
+			<input type="password" id="psd" class="form-cell-input" placeholder="请输入您的登录密码">
+		</section>
+		<section class="form-cell">
+			<span class="form-cell-name form-cell-password">密码：</span>
+			<input type="password" id="psd2" class="form-cell-input" placeholder="请输入您的登录密码">
+		</section>
+		<section class="form-cell">
+			<span class="form-cell-name form-cell-sf">身份：</span>
+			<select name="sf" id="sf">
+				<option value="broker.html" name="broker" hidden="hidden">经纪人</option>
+				<option value="broker.html" name="broker">经纪人</option>
+				<option value="owners.html" name="owners">小业主</option>
+				<option value="operator.html" name="operator">运营商</option>
+				<option value="agents.html" name="agents">代理商</option>
+				<option value="developers.html" name="developers">开发商</option>
+			</select>
+		</section>
+	</article>
+	<div class="btn_box">
+		<button class="register">注册</button>
+		<span class="btn-text">注册即代表同意 <a href="" class="xy">《活力矩阵用户协议》</a></span>
+	</div>
+</body>
+<script src="../../public/minijs/login/register.js"></script>
+
+</html>

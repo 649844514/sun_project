@@ -43,7 +43,7 @@ autoSwipe();
 
 
 /*排序按钮*/
-var $last = $("#last");
+var $last = $(".last");
 $last.on("tap",function(){
 	var $self = $(this);
 	if($self.hasClass('down')){
@@ -59,6 +59,7 @@ $last.on("tap",function(){
 var $search = $(".search");
 var $searchBox = $(".search-box");
 var $cancel = $(".cancel");
+var $clean = $(".search-box .clean");
 var $lis = $(".search-box li");
 var $search1 = $(".search1")[0];
 $search.on("tap",function(){
@@ -70,14 +71,25 @@ $cancel.on("tap",function(){
 });
 $lis.on("tap",function(){
 	$search1.value = this.innerHTML;
+	setTimeout(function(){
+		$searchBox.hide();
+		$search1.value = "";
+	},500);
+
 });
+$clean.on("tap",function(){
+	$lis.each(function(){
+		this.innerHTML = "";
+	})
+});
+
 
 /*city*/
 var $city = $(".city");
 var $citylis = $(".city-box li");
 var $cityBox = $(".city-box");
 var $close = $(".close");
-var address = $city[0].innerHTML;
+
 
 $city.on("tap",function(){
 	$cityBox.show();
@@ -88,13 +100,15 @@ $close.on("tap",function(){
 $citylis.on("tap",function(){
 	$cityBox.hide();
 	$city[0].innerHTML = this.innerHTML;
+	$city[1].innerHTML = this.innerHTML;
+
 });
 
 /*query*/
-var $querylis = $(".query li" ).not("#last");
+var $querylis = $(".query li" ).not(".last");
 var $queryBox = $(".query-box");
 var $contents = $(".content div");
-var $querylis2 = $(".query-title li").not("#lasts");
+var $querylis2 = $(".query-title li").not(".last");
 
 $querylis.on("tap",function(){
 	$queryBox.show();
@@ -106,6 +120,7 @@ $querylis.on("tap",function(){
 		$querylis2.eq(index).addClass("active");
 	})
 });
+
 $querylis2.on("tap",function(){
 	var index = $(this).index();
 	$contents.each(function(i){
@@ -156,6 +171,7 @@ $arealis.on("tap",function(){
 	if(this.index!=0){
 		$arealis.eq(0 ).removeClass("active");
 	}
+	$queryBox.hide()
 	var con = this.innerHTML
 });
 
@@ -165,6 +181,7 @@ $pricelis.on("tap",function(){
 	if(this.index!=0){
 		$pricelis.eq(0 ).removeClass("active");
 	}
+	$queryBox.hide()
 	var con = this.innerHTML
 });
 

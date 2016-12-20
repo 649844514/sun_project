@@ -220,18 +220,6 @@ footer ul li.f4 {
   background-size: 22px 22px;
   position: relative;
 }
-footer ul li.f4:after {
-  content: '3';
-  width: 15px;
-  height: 15px;
-  display: block;
-  position: absolute;
-  right: 20%;
-  top: -5%;
-  background: #ea5404;
-  color: #fff;
-  border-radius: 50%;
-}
 footer ul li.f5 {
   background: url("../../img/footer/bottom_press_icon01@2x.png") no-repeat center 0;
   background-size: 22px 22px;

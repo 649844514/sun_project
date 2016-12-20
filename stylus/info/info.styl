@@ -11,6 +11,7 @@ header
   height 30px
   padding 8px
   background #ffffff
+  font-size 16px
   ul
     border 1px solid #ea5404
     width 68%
@@ -34,6 +35,7 @@ header
 
 .info
   padding 3%
+  width 94%
   position absolute
   top 46px
   bottom 70px
@@ -41,20 +43,24 @@ header
   overflow-x hidden
   .list
     height 125px
+    width 100%
     padding 10px 0
     background #ffffff
     border-radius 5px
     position relative
     margin-bottom 10px
-    span
+    color #646464
+    p
       display block
       padding 0 20px
       text-indent 2em
+      line-height 18px
     .list-title
-      font-size 18px
+      font-size 16px
       font-weight 500
       padding 10px 0
       padding-left 20px
+      color #323232
       width 94%
       margin-bottom 10px
       border-bottom 1px solid #d6d7dc
@@ -62,10 +68,12 @@ header
       font-size 12px
       color #999
       padding 0 20px
-      float right
-      margin-top 10px
+      position absolute
+      right 0
+      bottom 6px
 .adv
   padding 3%
+  width 94%
   display none
   position absolute
   top 46px
@@ -74,31 +82,34 @@ header
   overflow-x hidden
   .list
     height 125px
+    width 100%
     padding 10px 0
     background #ffffff
     border-radius 5px
     position relative
-    .ls
+    color #646464
+    margin-bottom 10px
+    p
       display block
       padding 0 20px
       text-indent 2em
     .add
       display block
-      padding 10px 20px
+      padding 0 20px
     .list-title
-      font-size 18px
-      font-weight 500
+      font-size 16px
+      font-weight 600
       padding 10px 0
       padding-left 20px
+      color #323232
       width 94%
-
       margin-bottom 10px
       border-bottom 1px solid #d6d7dc
       .date
         font-size 12px
         color #999
         padding 0 20px
-        float right
+        font-weight 400
         position absolute
         right 10px
         top 20px
@@ -116,9 +127,11 @@ header
     background #ffffff
     margin-bottom 10px
     border-radius 5px
+    color #646464
     .list-title
-      font-size 18px
-      font-weight 500
+      font-size 16px
+      font-weight 600
+      color #323232
       padding 10px 0
       padding-left 20px
       width 94%
@@ -133,7 +146,9 @@ header
         font-size 12px
     .botton
       text-align center
-      padding  10px
+      position relative
+      font-size 12px
+      bottom 10px
       button
         background #efeff4
         color #646464
@@ -142,7 +157,11 @@ header
         border none
       span
         display block
-        float right
+        height 26px
+        line-height 26px
+        position absolute
+        right 0
+        bottom 0
     &:nth-child(2)
       .list-right
         background #0193e6
@@ -186,17 +205,6 @@ footer
         background-size 22px 22px
         color #ea5404
         position relative
-        &:after
-          content '3'
-          width 15px
-          height 15px
-          display block
-          position absolute
-          right 20%
-          top -5%
-          background #ea5404
-          color #ffffff
-          border-radius 50%
       &.f5
         background url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat center 0
         background-size 22px 22px

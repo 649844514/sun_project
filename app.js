@@ -18,8 +18,8 @@ app.get('/login',function(req,res){
 });
 
 //监听端口 来启动服务
-app.listen(9999,function(){
-	console.log('server run at port 9999');
+app.listen(16930,function(){
+	console.log('server run at port 16930');
 });
 
 //模块导出

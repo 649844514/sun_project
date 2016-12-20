@@ -1,8 +1,8 @@
 /*接单*/
 var $lis = $(".status");
 $lis.on("click",function(){
-	$(this ).addClass("active");
-	this.innerHTML = "已接单，待反馈";
+	$(this ).addClass("active" ).text("已接单，待反馈");
+
 });
 
 /*跳转详情*/
@@ -13,17 +13,9 @@ $cons.on("click",function(){
 /*删除*/
 var $section = $("section");
 $section.on("swipeLeft",function(){
-	var $del = $(this ).find(".del");
-	var $in = $(this ).find(".status");
-	$del.show();
-	$in.hide();
 	$(this).css("left","-18%")
 });
 $section.on("swipeRight",function(){
-	var $del = $(this ).find(".del");
-	var $in = $(this ).find(".status");
-	$del.hide();
-	$in.show();
 	$(this).css("left","0")
 });
 

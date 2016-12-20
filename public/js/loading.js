@@ -1,6 +1,6 @@
 window.onload = function(){
 	setTimeout(function(){
-		location.href = './login/login.html'
+		location.href = './index/index.html'
 	},2000)
 
-}
+};

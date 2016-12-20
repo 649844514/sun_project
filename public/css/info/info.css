@@ -13,6 +13,7 @@ header {
   height: 30px;
   padding: 8px;
   background: #fff;
+  font-size: 16px;
 }
 header ul {
   border: 1px solid #ea5404;
@@ -41,6 +42,7 @@ header ul li.active {
 }
 .info {
   padding: 3%;
+  width: 94%;
   position: absolute;
   top: 46px;
   bottom: 70px;
@@ -49,22 +51,26 @@ header ul li.active {
 }
 .info .list {
   height: 125px;
+  width: 100%;
   padding: 10px 0;
   background: #fff;
   border-radius: 5px;
   position: relative;
   margin-bottom: 10px;
+  color: #646464;
 }
-.info .list span {
+.info .list p {
   display: block;
   padding: 0 20px;
   text-indent: 2em;
+  line-height: 18px;
 }
 .info .list .list-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px 0;
   padding-left: 20px;
+  color: #323232;
   width: 94%;
   margin-bottom: 10px;
   border-bottom: 1px solid #d6d7dc;
@@ -73,11 +79,13 @@ header ul li.active {
   font-size: 12px;
   color: #999;
   padding: 0 20px;
-  float: right;
-  margin-top: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 6px;
 }
 .adv {
   padding: 3%;
+  width: 94%;
   display: none;
   position: absolute;
   top: 46px;
@@ -87,25 +95,29 @@ header ul li.active {
 }
 .adv .list {
   height: 125px;
+  width: 100%;
   padding: 10px 0;
   background: #fff;
   border-radius: 5px;
   position: relative;
+  color: #646464;
+  margin-bottom: 10px;
 }
-.adv .list .ls {
+.adv .list p {
   display: block;
   padding: 0 20px;
   text-indent: 2em;
 }
 .adv .list .add {
   display: block;
-  padding: 10px 20px;
+  padding: 0 20px;
 }
 .adv .list .list-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   padding: 10px 0;
   padding-left: 20px;
+  color: #323232;
   width: 94%;
   margin-bottom: 10px;
   border-bottom: 1px solid #d6d7dc;
@@ -114,7 +126,7 @@ header ul li.active {
   font-size: 12px;
   color: #999;
   padding: 0 20px;
-  float: right;
+  font-weight: 400;
   position: absolute;
   right: 10px;
   top: 20px;
@@ -134,10 +146,12 @@ header ul li.active {
   background: #fff;
   margin-bottom: 10px;
   border-radius: 5px;
+  color: #646464;
 }
 .demand .list .list-title {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  color: #323232;
   padding: 10px 0;
   padding-left: 20px;
   width: 94%;
@@ -154,7 +168,9 @@ header ul li.active {
 }
 .demand .list .botton {
   text-align: center;
-  padding: 10px;
+  position: relative;
+  font-size: 12px;
+  bottom: 10px;
 }
 .demand .list .botton button {
   background: #efeff4;
@@ -165,7 +181,11 @@ header ul li.active {
 }
 .demand .list .botton span {
   display: block;
-  float: right;
+  height: 26px;
+  line-height: 26px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .demand .list:nth-child(2) .list-right {
   background: #0193e6;
@@ -217,18 +237,6 @@ footer ul li.f4 {
   background-size: 22px 22px;
   color: #ea5404;
   position: relative;
-}
-footer ul li.f4:after {
-  content: '3';
-  width: 15px;
-  height: 15px;
-  display: block;
-  position: absolute;
-  right: 20%;
-  top: -5%;
-  background: #ea5404;
-  color: #fff;
-  border-radius: 50%;
 }
 footer ul li.f5 {
   background: url("../../img/footer/bottom_nor_icon01@2x.png") no-repeat center 0;

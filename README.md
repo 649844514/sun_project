@@ -1,2 +1,0 @@
-# sun_project
-zhchk

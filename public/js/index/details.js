@@ -8,3 +8,10 @@ $collect.on("click",function(){
 		$self.addClass("active");
 	}
 });
+var section = $("article section" );
+section.each(function(){
+	var index = $(this).index();
+	if(index%2 != 0){
+		$(this ).css("backgroundColor","#efeff4");
+	}
+})

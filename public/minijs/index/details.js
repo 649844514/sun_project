@@ -1,1 +1,1 @@
-var $collect=$(".banner .icon-collect");$collect.on("click",function(){var c=$(this);c.hasClass("active")?c.removeClass("active"):c.addClass("active")});
+var $collect=$(".banner .icon-collect");$collect.on("click",function(){var c=$(this);c.hasClass("active")?c.removeClass("active"):c.addClass("active")});var section=$("article section");section.each(function(){var c=$(this).index();c%2!=0&&$(this).css("backgroundColor","#efeff4")});

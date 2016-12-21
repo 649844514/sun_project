@@ -36,6 +36,10 @@ $cancel2.on("tap",function(){
 });
 $lis.on("tap",function(){
 	$search1.value = this.innerHTML;
+	setTimeout(function(){
+		$searchBox.hide();
+		$search1.value = "";
+	},500);
 });
 
 /*单选*/

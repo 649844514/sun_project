@@ -17,7 +17,7 @@ header {
 }
 header ul {
   border: 1px solid #ea5404;
-  width: 68%;
+  width: 82%;
   height: 30px;
   margin: 0 auto;
   border-radius: 5px;
@@ -50,7 +50,6 @@ header ul li.active {
   overflow-x: hidden;
 }
 .info .list {
-  height: 125px;
   width: 100%;
   padding: 10px 0;
   background: #fff;
@@ -94,7 +93,6 @@ header ul li.active {
   overflow-x: hidden;
 }
 .adv .list {
-  height: 125px;
   width: 100%;
   padding: 10px 0;
   background: #fff;
@@ -141,7 +139,6 @@ header ul li.active {
   overflow-x: hidden;
 }
 .demand .list {
-  height: 115px;
   padding: 10px;
   background: #fff;
   margin-bottom: 10px;

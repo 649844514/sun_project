@@ -29,23 +29,23 @@ header
     display flex
     height 40px
     line-height 40px
+    position relative
     border-bottom 1px solid #efefef
     .form-cell-name
-      display inline-block
-      width 50px
+      display block
+      width 70px
       padding-left 40px
       background url("../../img/login/content_ID_icon@2x.png") no-repeat 10px center
-      background-size 25%
+      background-size 18px 50%
       &.form-cell-mark
-        width 20%
         background url("../../img/login/content_verify_icon@2x.png") no-repeat 10px center
-        background-size 12%
+        background-size 18px 50%
       &.form-cell-password
         background url("../../img/login/content_password_icon@2x.png") no-repeat 10px center
-        background-size 20%
+        background-size  18px 50%
       &.form-cell-sf
         background url("../../img/login/content_position_icon@2x.png") no-repeat 10px center
-        background-size 25%
+        background-size 18px 50%
      .btn_mark
        background #ed692b
        border none
@@ -54,21 +54,34 @@ header
        font-size 12px
        height 30px
        margin 5px 0
-       margin-right 2px
-
+       margin-right 12px
     .form-cell-input
       flex 1
       border none
       outline none
     #sf
       color #999
-      width 55%
+      width 90%
+      margin-right 15px
       height 36px
-      border none
-      outline none
-      option
-        color #ffffff
-        background-color #a3a3a3
+      background url("../../img/index/content_icon02_nor@2x.png") right center no-repeat
+      text-indent 1em
+    .hid_sf
+      display none
+      color #ffffff
+      background-color #a3a3a3
+      width 75px
+      height 155px
+      text-align center
+      border-radius 5px
+      position absolute
+      right 15px
+      top 25px
+      span
+        display block
+        height 30px
+        line-height 30px
+        border-bottom 1px solid #e6e6e6
 
 
 .btn_box

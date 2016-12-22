@@ -134,8 +134,9 @@ $querylis2.on("tap",function(){
 /*region*/
 var $rels = $(".region .left" ).children();
 var $rerightls = $(".region .right");
-$rels.on("tap",function(){
+$rels.on("click",function(){
 	var index = $(this).index();
+	console.log(index)
 	$rerightls.each(function(i){
 		$rels.eq(i ).removeClass("active");
 		$rels.eq(index ).removeClass("active");
@@ -146,7 +147,7 @@ $rels.on("tap",function(){
 /*many*/
 var $ls = $(".many .left" ).children();
 var $rightls = $(".many .right");
-$ls.on("tap",function(){
+$ls.on("click",function(){
 	var index = $(this).index();
 	$rightls.each(function(i){
 		$ls.eq(i ).removeClass("active");
@@ -159,7 +160,7 @@ $ls.on("tap",function(){
 
 /*query 右侧li点击退出*/
 var $rights = $(".content .right li");
-$rights.on("tap",function(){
+$rights.on("click",function(){
 	$queryBox.hide();
 	var con = this.innerHTML;
 
@@ -167,7 +168,7 @@ $rights.on("tap",function(){
 
 /*area*/
 var $arealis = $(".area li" ).not(".last");
-$arealis.on("tap",function(){
+$arealis.on("click",function(){
 	if(this.index!=0){
 		$arealis.eq(0 ).removeClass("active");
 	}
@@ -177,7 +178,7 @@ $arealis.on("tap",function(){
 
 /*price*/
 var $pricelis = $(".price li" ).not(".last");
-$pricelis.on("tap",function(){
+$pricelis.on("click",function(){
 	if(this.index!=0){
 		$pricelis.eq(0 ).removeClass("active");
 	}

@@ -22,5 +22,8 @@
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1",
     "http-proxy-middleware": "^0.17.3"
+  },
+  "dependencies": {
+    "sha1": "^1.1.1"
   }
 }

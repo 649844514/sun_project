@@ -400,7 +400,9 @@ footer ul li.f5 {
   line-height: 35px;
   border-bottom: 1px solid #e1e1e1;
 }
-.city-box z-index,
+.city-box {
+  z-index: 9;
+}
 .city-box .head {
   font-weight: bold;
   text-align: center;
@@ -408,12 +410,10 @@ footer ul li.f5 {
   font-size: 18px;
   border-bottom: 1px solid #d6d7dc;
 }
-.city-box z-index:after,
 .city-box .head:after {
   content: "";
   display: none;
 }
-.city-box z-index .close,
 .city-box .head .close {
   color: #ea5404;
   font-weight: 400;

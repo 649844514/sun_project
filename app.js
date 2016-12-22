@@ -1,28 +1,44 @@
-//引入path内置模块
+//引入 path 内置模块
 var path = require('path');
-//引入express依赖模块
+//引入 express 依赖模块，用来启动静态服务器
 var express = require('express');
+//引入转发请求插件
+var proxy = require('http-proxy-middleware');
 
 //实例 express
 var app = express();
-//指定访问页面的路径
-//__dirname 物理路径
-var viewsPath = path.join(__dirname,'views');
-app.use('/',express.static(viewsPath));
 
-var publicPath = path.join(__dirname,'public');
-app.use('/public',express.static(publicPath));
+//定义通过 /api 访问的请求，转发到指定路径
+app.use('/api', proxy({
+	target: 'http://122.10.30.153:9901',
+	pathRewrite: {
+		'^/api': '/'
+	}
+}));
+//   http://127.0.0.1:9888/api/index
+// 替换为  http://122.10.30.153:9901/index
 
-app.get('/login',function(req,res){
-	res.send('ha ha ha')
+
+//拼接物理路径，用来指定虚拟路径的访问（静态页面文件）
+var viewsPath = path.join(__dirname, 'views');
+//指定访问 页面 的路径
+app.use('/', express.static(viewsPath));
+
+// 拼接物理路径，用来指定虚拟路径的访问（静态资源文件）
+var publicPath = path.join(__dirname, 'public');
+//指定访问静态资源文件的路径
+app.use('/public', express.static(publicPath));
+
+// 定义一个接口
+app.get('/login', function(req, res){
+	res.send('ha ha ha');
 });
 
-//监听端口 来启动服务
-app.listen(16930,function(){
+
+//监听端口 16930， 用来启动服务
+app.listen(16930, function(){
 	console.log('server run at port 16930');
 });
 
 //模块导出
-module.exports= app;
-
-
+module.exports = app;

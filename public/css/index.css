@@ -5,7 +5,7 @@ body {
 }
 .logo {
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 50%;
   width: 180px;
   height: 180px;
@@ -13,6 +13,25 @@ body {
   margin-left: -90px;
   background: url("../img/logo.png") no-repeat center;
   background-size: 100%;
+}
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 220px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -110px;
+}
+.box input {
+  border: none;
+  margin-bottom: 10px;
+}
+.box button {
+  background: #ea5404;
+  border: none;
+  width: 100%;
+  height: 30px;
 }
 .copy {
   position: absolute;

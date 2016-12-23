@@ -86,11 +86,11 @@ article .photo {
 }
 article .photo .photo1 {
   font-size: 13px;
-  width: 28%;
+  width: 30%;
   height: 65px;
   float: left;
   text-align: center;
-  margin-right: 8%;
+  margin-right: 5%;
   border-radius: 5px;
   background: #00f;
 }

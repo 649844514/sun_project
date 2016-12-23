@@ -14,10 +14,10 @@ var app=express();
 //定义通过/api访问的请求，转发到指定路径
 app.use('/api',proxy({
 	target:'http://guanjp.com:9805',
-	changeorigin:true,
+	changeOrigin:true,
 	ws:true,
 	cookieRewrite:true,
-	pathRewrite:{
+	pathRewrite: {
 		'^/api':'/'
 	}
 }));

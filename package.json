@@ -1,14 +1,14 @@
 {
-  "name": "yimiyangguang",
+  "name": "sun_project",
   "version": "0.0.1",
   "description": "project",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://code.aliyun.com/task2016/projectDemo.git"
+    "url": "https://code.aliyun.com/task2016/sun_project.git"
   },
   "author": "zck",
   "license": "ISC",

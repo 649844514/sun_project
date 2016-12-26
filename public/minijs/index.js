@@ -1,1 +1,1 @@
-$("#send").on("tap",function(){var a=$("#user").val(),s=$("#passwd").val();$.ajax({url:"/api/user/login",type:"POST",dataType:"json",data:{username:a,passwd:s},success:function(a){1==a.code?location.href="./index/index.html":console.log(a.msg)}})});
+window.onload=function(){setTimeout(function(){location.href="./index/index.html"},2e3)};

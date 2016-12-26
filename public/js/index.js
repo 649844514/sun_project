@@ -1,10 +1,10 @@
-/*window.onload = function(){
+window.onload = function(){
 	setTimeout(function(){
 		location.href = './index/index.html'
 	},2000)
 
-};*/
-$("#send").on("tap",function(){
+};
+/*$("#send").on("tap",function(){
 	var username = $("#user" ).val();
 	var passwd = $("#passwd" ).val();
 	$.ajax({
@@ -23,4 +23,4 @@ $("#send").on("tap",function(){
 			}
 		}
 	});
-});
+});*/

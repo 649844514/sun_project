@@ -1,5 +1,5 @@
 {
-  "name": "sun_project",
+  "name": "yimiyangguang",
   "version": "0.0.1",
   "description": "project",
   "main": "server.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://code.aliyun.com/task2016/sun_project.git"
+    "url": "https://code.aliyun.com/task2016/yimiyangguang.git"
   },
   "author": "zck",
   "license": "ISC",

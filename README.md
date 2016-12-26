@@ -1,10 +1,10 @@
 * 下载
     ``` 
-     git clone https://code.aliyun.com/task2016/sun_project.git
+     git clone https://github.com/649844514/yimiyangguang.git
     ```
 * 进入目录
     ``` 
-     cd sun_project
+     cd yimiyangguang
     ```
 * 安装依赖
     ``` 
@@ -12,7 +12,7 @@
     ```
 * 启动项目
     ``` 
-     node app.js
+     node server.js
     ```
 * 访问
     ``` 
